@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="currency" >
+            <group id="foreignexchangerates" translate="label" sortOrder="41" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Foreign currency exchange service</label>
+                <field id="timeout" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Connection Timeout in Seconds</label>
+                </field>
+                <field id="reates_url_template" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Exchange API URL</label>
+                    <comment>
+                        <![CDATA[URL must have placeholders '{{CURRENCY_FROM}}' and '{{CURRENCY_TO}}'. E.g. https://api.exchangeratesapi.io/latest?base={{CURRENCY_FROM}}&symbols={{CURRENCY_TO}}]]>
+                    </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
